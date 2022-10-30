@@ -4,7 +4,7 @@ public class Main {
         changeYear(2022); //Задача 1
         changeYear(1980); //Задача 1
         System.out.println(isVariousOS(0, 2014)); // Задача 2
-        //deliveryDays(115);
+        deliveryDays(115);
     }
 
     //Задача 1
@@ -35,7 +35,19 @@ public class Main {
         return null;
     }
 
-
+    public static void deliveryDays(int deliveryDistance) {
+        System.out.println("Задача № 3");
+        int deliveryDays = 1;
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + deliveryDays);
+        } else {
+            if (deliveryDistance > 20 && deliveryDistance < 60) {
+                System.out.println("Потребуется дней: " + deliveryDays * 2);
+            } else if (deliveryDistance > 60) {
+                System.out.println("Потребуется дней: " + deliveryDays * 3);
+            }
+        }
+    }
 }
 
 
